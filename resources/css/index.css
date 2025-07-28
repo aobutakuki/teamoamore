@@ -1,0 +1,39 @@
+.header{
+    background-color: #eb048a;
+    color: white;
+    padding: 10px;  
+    height: 7vh;
+    align-items: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.heart-icon{
+    font-size: 35px;
+    margin-left: 60px;
+
+}
+
+a:hover{
+    color: #51fa6d;
+}
+
+body{
+    background-color: #dddada;
+    height: 100hv;
+     overflow-x: hidden;
+}
+
+.title{
+    font-family: "DynaPuff", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 30px;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
