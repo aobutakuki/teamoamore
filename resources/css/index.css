@@ -23,10 +23,24 @@ a:hover{
 }
 
 body{
-    background-color: #dddada;
+    background-color: #e0e0e0;
     height: 100hv;
      overflow-x: hidden;
 }
+
+.card{
+    background-color: white;
+    width: 800px;
+    height:100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
 
 .title{
     font-family: "DynaPuff", sans-serif;
@@ -36,4 +50,37 @@ body{
     justify-content: center;
     width: 100%;
     text-align: center;
+}
+
+.content{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content li{
+    text-align:left;
+}
+
+ul {
+  list-style: none; 
+  padding-left: 0;  
+}
+
+
+ul li::before {
+  /* Font Awesome properties */
+  font-family: "Font Awesome 6 Free"; /* Specifies the icon font */
+  font-weight: 900; 
+  content: "\f004"; /* The specific Unicode for the SOLID heart icon (fa-heart) */
+  
+  /* Styling for the icon */
+  color: #ee0b8f; 
+  margin-right: 10px; /* Adds some space between the heart and your text */
+}
+
+li.wicked-green::before {
+  color: #51fa6d; /* Use the same green color as in the hover effect */
 }
