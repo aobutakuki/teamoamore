@@ -1,0 +1,116 @@
+ .header{
+    background-color: #eb048a;
+    color: white;
+    padding: 10px;  
+    height: 7vh;
+    align-items: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.heart-icon{
+    font-size: 35px;
+    margin-left: 60px;
+
+}
+
+a:hover{
+    color: #51fa6d;
+}
+
+body{
+    background-color: #f0f0f0;
+    height: 100hv;
+     overflow-x: hidden;
+}
+
+
+p{
+    width: 70%;
+    margin: 0 auto;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+    overflow-wrap: break-word;
+}
+
+
+
+
+
+
+
+/*Heart Animation CSS*/
+        .heart-icon {
+            font-size: 2.25rem; /* 36px */
+        }
+        
+        /* Main message container */
+        .message-container {
+            position: relative;
+            text-align: center;
+            padding-top: 5rem;
+            z-index: 10;
+        }
+
+        .message-container h1 {
+            font-family: 'DynaPuff', cursive;
+            font-weight: 700;
+            font-size: 3.75rem; /* 60px */
+            color: #be185d; /* A deeper pink for the text */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heart animation container */
+        .heart-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        /* Keyframes for the floating animation */
+        @keyframes fly {
+            0% {
+                bottom: -50px; /* Start below the screen */
+                opacity: 1;
+            }
+            100% {
+                bottom: 100vh; /* Move to the top of the screen */
+                opacity: 0;
+            }
+        }
+
+        /* Styling for each individual heart icon */
+        .heart {
+            position: absolute;
+            bottom: -50px;
+            color: #f472b6; /* Heart color */
+            font-size: 20px;
+            opacity: 0;
+            animation: fly 7s linear infinite;
+        }
+
+        /* Randomizing animation properties for a natural look */
+        .heart:nth-child(1) { left: 15%; animation-delay: 0s; animation-duration: 5s; font-size: 18px; }
+        .heart:nth-child(2) { left: 30%; animation-delay: 1.5s; animation-duration: 7s; font-size: 24px; }
+        .heart:nth-child(3) { left: 10%; animation-delay: 3s; animation-duration: 6s; font-size: 20px; }
+        .heart:nth-child(4) { left: 50%; animation-delay: 0.5s; animation-duration: 8s; font-size: 19px; }
+        .heart:nth-child(5) { left: 70%; animation-delay: 2.2s; animation-duration: 5.5s; font-size: 22px; }
+        .heart:nth-child(6) { left: 85%; animation-delay: 4s; animation-duration: 9s; font-size: 18px; }
+        .heart:nth-child(7) { left: 5%; animation-delay: 5s; animation-duration: 6s; font-size: 25px; }
+        .heart:nth-child(8) { left: 90%; animation-delay: 1s; animation-duration: 8s; font-size: 20px; }
+        .heart:nth-child(9) { left: 60%; animation-delay: 3.5s; animation-duration: 7s; font-size: 24px; }
+        .heart:nth-child(10) { left: 40%; animation-delay: 6s; animation-duration: 6s; font-size: 19px; }
+        .heart:nth-child(11) { left: 25%; animation-delay: 2s; animation-duration: 8s; font-size: 21px; }
+        .heart:nth-child(12) { left: 75%; animation-delay: 4.5s; animation-duration: 5s; font-size: 23px; }
