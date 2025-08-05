@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 6 meses amor!</title>
+
+   <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=DynaPuff:wght@500&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="../resources/css/desenho.css">
+</head>
+
+<body>
+    <!-- Main Navigation Bar - Centered -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Hamburger button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="fa-solid fa-heart heart-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/message.html">Mensagem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/memorias.html">Memórias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Desenho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container text-center mt-4">
+        <h1 class="anniversary-title">Feliz 6 meses!</h1>
+
+        <!-- Category Selection -->
+        <!-- Desktop View: Grid of posters (visible on large screens and up) -->
+        <div class="d-none d-lg-flex justify-content-center gap-3 mb-4">
+            <div class="category-poster active" data-target="#barbie-content">
+                <img src="https://placehold.co/400x600/E91E63/FFFFFF?text=Barbie" alt="Selecionar categoria Barbie">
+            </div>
+            <div class="category-poster" data-target="#moranguinho-content">
+                <img src="https://placehold.co/400x600/F44336/FFFFFF?text=Moranguinho" alt="Selecionar categoria Moranguinho">
+            </div>
+            <div class="category-poster" data-target="#pony-content">
+                <img src="https://placehold.co/400x600/673AB7/FFFFFF?text=My+Little+Pony" alt="Selecionar categoria My Little Pony">
+            </div>
+        </div>
+
+        <!-- Mobile View: Carousel (visible on medium screens and down) -->
+        <div id="categoryCarousel" class="carousel slide d-lg-none mb-4" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="category-poster" data-target="#barbie-content">
+                        <img src="https://placehold.co/400x600/E91E63/FFFFFF?text=Barbie" alt="Selecionar categoria Barbie">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="category-poster" data-target="#moranguinho-content">
+                        <img src="https://placehold.co/400x600/F44336/FFFFFF?text=Moranguinho" alt="Selecionar categoria Moranguinho">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                     <div class="category-poster" data-target="#pony-content">
+                        <img src="https://placehold.co/400x600/673AB7/FFFFFF?text=My+Little+Pony" alt="Selecionar categoria My Little Pony">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!-- =================================================================== -->
+        <!-- BARBIE CONTENT SECTION                                              -->
+        <!-- =================================================================== -->
+        <div id="barbie-content" class="content-section active">
+            <div class="accordion movie-accordion" id="barbie-accordion">
+
+                <!-- MOVIE ITEM 1 - COPY FROM HERE -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#barbie-movie-1" aria-expanded="false" aria-controls="barbie-movie-1">
+                            Barbie em A Princesa e a Plebeia
+                        </button>
+                    </h2>
+                    <div id="barbie-movie-1" class="accordion-collapse collapse" data-bs-parent="#barbie-accordion">
+                        <div class="accordion-body">
+                            <div class="video-container">
+                                <!-- The Iframe will be loaded by JS -->
+                                <iframe data-yt-id="https://www.youtube.com/watch?v=svIqzmHf-mA&list=PLvtzzb6JTUdZjQKqseko8gHUY9IHjBX8V&index=1&ab_channel=NoitedaBarbie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p class="text-start">
+                               A princesa Anneliese, descobre uma amizade inesperada, quando se depara com a humilde plebeia de cabelos escuros, Erika. Uma terrível conspiração ameaça a liberdade da gentil nobre, e apenas Erika, a aliada determinada de Anneliese que tem uma notável semelhança com ela, pode salvá-la. A princesa e o mendigo frustrarão os planos do conselheiro intrigante da rainha, Preminger?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- MOVIE ITEM 1 - END COPY HERE -->
+
+                <!-- MOVIE ITEM 2 - PASTE HERE AND EDIT -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#barbie-movie-2" aria-expanded="false" aria-controls="barbie-movie-2">
+                            Barbie e o Castelo de Diamante
+                        </button>
+                    </h2>
+                    <div id="barbie-movie-2" class="accordion-collapse collapse" data-bs-parent="#barbie-accordion">
+                        <div class="accordion-body">
+                            <div class="video-container">
+                                <iframe data-yt-id="https://www.youtube.com/watch?v=MKDsl_qVfdo&list=PL7sGo_rSUTl8h6AvtYs-eJ4aoE8K4B0PW&ab_channel=BarbieFilmesTV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p class="text-start">
+                                Para entender a importância da amizade, Barbie e sua melhor amiga, Teresa, decidem contar à jovem Stacie um conto de fadas musical de uma bela terra escondida, e duas garotas de bom coração que amam música: Alexa e Liana. Enquanto um espelho encantado abre caminho para uma nova e maravilhosa amizade, as duas companheiras embarcam em uma perigosa missão para o cintilante Castelo de Diamante, para frustrar os planos secretos da musa malévola, Lydia. O poder do amor e do companheirismo pode salvar o dia?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more Barbie movies here by copying the block above -->
+
+                <!-- MOVIE ITEM 3 - PASTE HERE AND EDIT -->
+                                 <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#barbie-movie-3" aria-expanded="false" aria-controls="barbie-movie-3">
+                            Barbie em Rapunzel
+                        </button>
+                    </h2>
+                    <div id="barbie-movie-3" class="accordion-collapse collapse" data-bs-parent="#barbie-accordion">
+                        <div class="accordion-body">
+                            <div class="video-container">
+                                <iframe data-yt-id="https://www.youtube.com/watch?v=IE5n25WSYdU&list=PLuHYLocJdMJjDmSZarLdp4BFi8CCV98bx&ab_channel=orlacoficial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p class="text-start">
+                               A boneca Barbie vive Rapunzel, uma jovem de longos e lindos cabelos que é mantida prisioneira na torre de um castelo pela poderosa bruxa Gothel. A descoberta de um pincel mágico trará grandes revelações para a heroína e mudará seu destino.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MOVIE ITEM 4 - PASTE HERE AND EDIT -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#barbie-movie-4" aria-expanded="false" aria-controls="barbie-movie-4">
+                            Barbie em A Princesa da Ilha
+                        </button>
+                    </h2>
+                    <div id="barbie-movie-4" class="accordion-collapse collapse" data-bs-parent="#barbie-accordion">
+                        <div class="accordion-body">
+                            <div class="video-container">
+                                <iframe data-yt-id="https://www.youtube.com/watch?v=woV6VOeEBQQ&list=PLuHYLocJdMJgn9GGXFaTzdGdHWY7fcqD3&ab_channel=orlacoficial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p class="text-start">
+                              Naufragada quando criança, Rosella cresce na ilha sob o olhar atento de seus amáveis amigos animais. A chegada do príncipe Antonio leva Rosella e seus amigos peludos a explorar a civilização e, finalmente, salvar o reino, descobrindo uma trama secreta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- MOVIE ITEM 5 - PASTE HERE AND EDIT -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#barbie-movie-5" aria-expanded="false" aria-controls="barbie-movie-5">
+                            Barbie e as Sapatilhas Mágicas
+                        </button>
+                    </h2>
+                    <div id="barbie-movie-5" class="accordion-collapse collapse" data-bs-parent="#barbie-accordion">
+                        <div class="accordion-body">
+                            <div class="video-container">
+                                <iframe data-yt-id="https://www.youtube.com/watch?v=sAZQGEV6pdg&list=PLePe4CiF2zJuQ6K1YYmrl4XiRjCZTgijI&ab_channel=JacyFerreira" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p class="text-start">
+                              Dance com Barbie nesta mágica aventura. Barbie é Kristyn, uma bailarina que tem grandes sonhos. Quando ela calça um par de sapatilhas pink brilhante, Kristyn e sua melhor amiga Hailey vão, de uma maneira mágica, para o fantástico mundo do balé.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- MOVIE ITEM 6 - PASTE HERE AND EDIT -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#barbie-movie-6" aria-expanded="false" aria-controls="barbie-movie-6">
+                            Barbie e o Portal Secreto
+                        </button>
+                    </h2>
+                    <div id="barbie-movie-6" class="accordion-collapse collapse" data-bs-parent="#barbie-accordion">
+                        <div class="accordion-body">
+                            <div class="video-container">
+                                <iframe data-yt-id="https://www.youtube.com/watch?v=wx55Y5L9P0Y&list=PLuHYLocJdMJhsjvw1dCteAfh9t98M1uOc&ab_channel=orlacoficial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p class="text-start">
+                              Em seu novo filme, Barbie estrela como a Alexa, uma linda princesa que descobre um Portal Secreto que leva a uma terra encantada cheia de supresas e seres mágicos! Ao cruzar o Portal, Alexa conhece a sereia Romy e a fada Nori e elas lhe contam que uma princesa mimada chamada Malúcia está capturando toda a magia do reino só para ela.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MOVIE ITEM 7 - PASTE HERE AND EDIT -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#barbie-movie-7" aria-expanded="false" aria-controls="barbie-movie-7">
+                            Barbie Super Princesa
+                        </button>
+                    </h2>
+                    <div id="barbie-movie-7" class="accordion-collapse collapse" data-bs-parent="#barbie-accordion">
+                        <div class="accordion-body">
+                            <div class="video-container">
+                                <iframe data-yt-id="https://www.youtube.com/watch?v=F81iziByDoQ&ab_channel=LazaroToler" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p class="text-start">
+                              Barbie estrelas como Kara, uma princesa moderna com uma vida cotidiana. Um dia, depois de ter sido beijado por uma borboleta mágica, Kara logo descobre que tem super poderes incríveis, permitindo-lhe para se transformar em Super faísca, seu segredo, de combate ao crime alter ego. Mas seu primo com ciúmes também pega a borboleta e se transforma em super-herói nemesis de Kara, escuro faísca. Quando descobrem verdadeiro inimigo do reino, eles podem colocar de lado suas diferenças para formar uma equipe de super?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <!-- MOVIE ITEM 8 - PASTE HERE AND EDIT -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#barbie-movie-8" aria-expanded="false" aria-controls="barbie-movie-8">
+                            Barbie e os Golfinhos Mágicos
+                        </button>
+                    </h2>
+                    <div id="barbie-movie-8" class="accordion-collapse collapse" data-bs-parent="#barbie-accordion">
+                        <div class="accordion-body">
+                            <div class="video-container">
+                                <iframe data-yt-id="https://www.youtube.com/watch?v=aOJApZkGqaI&list=PLGdkKD6eyO9O2twiqpahVv1CDnjK9GRf3&ab_channel=%D0%A1%D0%B2%D0%B5%D1%82%D0%B0%D0%A5%D0%BE%D0%BC%D0%B5%D0%BD%D0%BA%D0%BE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p class="text-start">
+                              Enquanto Ken faz estágio em biologia marítima num resort sob a supervisão da professora Marlo, Barbie e suas irmãs decidem visitá-lo. A alegria e a diversão subaquática tomam conta das garotas até que elas descobrem que os golfinhos das pedras preciosas realmente existem e estão em perigo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <!-- MOVIE ITEM 9- PASTE HERE AND EDIT -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#barbie-movie-9" aria-expanded="false" aria-controls="barbie-movie-9">
+                            Barbie Dreamhouse Adventures: O Mistério da Sereia Mágica
+                        </button>
+                    </h2>
+                    <div id="barbie-movie-9" class="accordion-collapse collapse" data-bs-parent="#barbie-accordion">
+                        <div class="accordion-body">
+                            <div class="video-container">
+                                <iframe data-yt-id="https://www.youtube.com/live/hOxFlkJ8yxM?si=_yhEHvPoCvF7cNvy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p class="text-start">
+                              A aventura começa como um trabalho de verão em um parque aquático épico em Malibu e se transforma em um mistério embaixo d’água em que Barbie e suas amigas resgatam uma baleia perdida e a levam para a sua família. Enquanto isso, o resto da família Roberts está
+desvendando seu próprio mistério de sereia na Costa Rica, que os unirá para as férias de sua vida.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- =================================================================== -->
+        <!-- MORANGUINHO CONTENT SECTION                                         -->
+        <!-- =================================================================== -->
+        <div id="moranguinho-content" class="content-section">
+             <div class="accordion movie-accordion" id="moranguinho-accordion">
+                <!-- To add a Moranguinho movie, copy a "MOVIE ITEM" block from the Barbie section -->
+                <!-- Paste it here, and remember to change the IDs to be unique -->
+                <!-- Example: data-bs-target="#moranguinho-movie-1" and id="moranguinho-movie-1" -->
+                <p>Conteúdo da Moranguinho em breve! 🍓</p>
+             </div>
+        </div>
+
+        <!-- =================================================================== -->
+        <!-- MY LITTLE PONY CONTENT SECTION                                      -->
+        <!-- =================================================================== -->
+        <div id="pony-content" class="content-section">
+            <div class="accordion movie-accordion" id="pony-accordion">
+                <!-- To add a My Little Pony movie, copy a "MOVIE ITEM" block from the Barbie section -->
+                <!-- Paste it here, and remember to change the IDs to be unique -->
+                <!-- Example: data-bs-target="#pony-movie-1" and id="pony-movie-1" -->
+                <p>Conteúdo de My Little Pony em breve! 🦄</p>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    
+    <script src="../resources/script/desenho.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+    /* General Body and Font Styles */
+        body {
+            background-color: #fde7f3; /* A softer pink background */
+            font-family: 'Nunito', sans-serif;
+            color: #444;
+        }
+
+        /* Main Navigation Bar - Centered */
+        .navbar {
+            background-color: #eb048a; /* Your original header pink */
+            padding: 10px 0;
+        }
+
+        .navbar-nav {
+            width: 100%;
+            justify-content:space-between;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: white;
+            font-family: 'DynaPuff', cursive;
+            font-size: 1.2rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #51fa6d !important; /* Wicked Green for hover/active */
+        }
+
+        .heart-icon {
+            font-size: 30px;
+            color: white;
+            transition: color 0.3s;
+        }
+        .heart-icon:hover {
+            color: #51fa6d !important; /* Wicked Green for hover */
+        }
+
+        .navbar-toggler {
+            border: none;
+            font-size: 24px;
+            color: white;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        /* Main Content & Titles */
+        .anniversary-title {
+            font-family: 'DynaPuff', cursive;
+            color: #eb048a;
+            font-size: clamp(2rem, 8vw, 3rem); /* Responsive font size */
+            margin-bottom: 30px;
+        }
+
+        /* Category Selection Posters */
+        .category-poster {
+            width: 200px;
+            border: 4px solid transparent;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .category-poster:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .category-poster.active {
+            border-color: #51fa6d; /* Wicked Green border for active category */
+            transform: scale(1.08);
+        }
+
+        .category-poster img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+        }
+        
+        /* Mobile Carousel Specific Styles */
+        #categoryCarousel .carousel-item {
+            /* Ensures posters are centered within the carousel slide */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        
+        #categoryCarousel .carousel-control-prev-icon,
+        #categoryCarousel .carousel-control-next-icon {
+            /* Makes the default white arrows visible on our light background */
+            filter: invert(1) grayscale(1);
+        }
+
+        /* Hidden Content Sections */
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        /* Expansible Movie Cards (Accordion) */
+        .movie-accordion .accordion-item {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden; /* Important for rounded corners */
+        }
+
+        .movie-accordion .accordion-button {
+            color: #eb048a;
+            font-weight: bold;
+            font-size: 1.1rem;
+            background-color: #fff;
+        }
+        
+        .movie-accordion .accordion-button:not(.collapsed) {
+            color: white;
+            background-color: #eb048a;
+            box-shadow: inset 0 -3px 0 rgba(0,0,0,0.1);
+        }
+
+        .movie-accordion .accordion-button:focus {
+            box-shadow: 0 0 0 0.25rem rgba(81, 250, 109, 0.5); /* Green focus outline */
+        }
+        
+        .movie-accordion .accordion-button::after {
+            /* Custom accordion icon */
+            filter: grayscale(1) brightness(5);
+        }
+
+        .movie-accordion .accordion-button:not(.collapsed)::after {
+            filter: invert(1) grayscale(100%) brightness(200%);
+        }
+
+        .movie-accordion .accordion-body {
+            padding: 20px;
+        }
+
+        .movie-accordion .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        .movie-accordion .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        @media (max-width: 991.98px) {
+    /* Apply these styles only on screens smaller than the 'lg' breakpoint */
+    .category-poster {
+        opacity: 0; /* Make non-active posters semi-transparent on mobile */
+    }
+    .category-poster.active {
+        opacity: 1; /* Make the active poster fully visible on mobile */
+    }
+}
