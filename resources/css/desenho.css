@@ -120,6 +120,31 @@
             font-size: 1.1rem;
             background-color: #fff;
         }
+
+         .video-container .play-button-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px; /* Adjusts the triangle position */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transition: transform 0.2s ease, background-color 0.2s ease;
+        pointer-events: none; /* Allows clicks to go through to the link */
+    }
+
+    .video-container a:hover .play-button-overlay {
+        transform: translate(-50%, -50%) scale(1.1);
+        background-color: rgba(235, 4, 138, 0.8); /* Pink on hover */
+    }
         
         .movie-accordion .accordion-button:not(.collapsed) {
             color: white;
