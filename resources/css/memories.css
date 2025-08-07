@@ -1,38 +1,165 @@
- .header{
-    background-color: #eb048a;
-    color: white;
-    padding: 10px;  
-    height: 7vh;
-    align-items: center;
-    
-}
+.navbar {
+            background-color: #eb048a; /* Your original header pink */
+            padding: 10px 0;
+        }
+
+        .navbar-nav {
+            width: 100%;
+            justify-content:space-between;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: white;
+            font-family: 'DynaPuff', cursive;
+            font-size: 1.2rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #51fa6d !important; /* Wicked Green for hover/active */
+        }
+
+        .heart-icon {
+            font-size: 30px;
+            color: white;
+            transition: color 0.3s;
+        }
+        .heart-icon:hover {
+            color: #51fa6d !important; /* Wicked Green for hover */
+        }
+
+        .navbar-toggler {
+            border: none;
+            font-size: 24px;
+            color: white;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
 
 a{
     text-decoration: none;
     color: white;
 }
 
-.heart-icon{
-    font-size: 35px;
-    margin-left: 60px;
 
-}
-
-a:hover{
-    color: #51fa6d;
-}
-
-body{
-    background-color: #f0f0f0;
-    height: 100hv;
-     overflow-x: hidden;
-}
-
-.memories-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body {
+    background-color: #f8f8f8; /* A slightly softer background */
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
     padding: 20px;
-    margin-top: 20px;
+    color: #333;
+}
+
+.memories-container {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.memories-container h1 {
+    font-family: 'DynaPuff', cursive;
+    color: #eb048a; /* Main pink */
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+}
+
+
+/* ---- General Card Styling ---- */
+.memory-card {
+    /* Smart spacing between cards for a modern look */
+    margin-bottom: 50px; 
+}
+
+.memory-content {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between image and text */
+}
+
+.memory-image {
+    flex: 1; /* Assign flex properties to containers */
+    padding: 12px; /* This padding creates the space for the frame effect */
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.memory-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px; /* Slightly rounded corners for the image itself */
+}
+
+.memory-text {
+    flex: 1;
+}
+
+.memory-text h2 {
+    font-family: 'DynaPuff', cursive;
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.memory-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* ---- Alternating Colors & Layout ---- */
+
+/* Card 1, 3, 5, etc. (ODD) */
+.memory-card:nth-child(odd) .memory-image {
+    border: 6px solid #eb048a; /* PINK FRAME */
+}
+
+.memory-card:nth-child(odd) .memory-text h2 {
+    color: #eb048a; /* PINK TITLE */
+}
+
+/* Card 2, 4, 6, etc. (EVEN) */
+.memory-card:nth-child(even) .memory-content {
+    flex-direction: row-reverse; /* Flips the layout: text on left, image on right */
+}
+
+.memory-card:nth-child(even) .memory-image {
+    border: 6px solid #51fa6d; /* GREEN FRAME */
+}
+
+.memory-card:nth-child(even) .memory-text h2 {
+    color: #51fa6d; /* GREEN TITLE */
+}
+
+
+/* ---- Mobile Responsiveness ---- */
+@media (max-width: 768px) {
+    .memories-container h1 {
+        font-size: 2.2rem;
+    }
+    
+    .memory-content {
+        flex-direction: column; /* Stacks image and text vertically */
+        gap: 20px;
+    }
+
+    /* This resets the layout flip on mobile, as it's not needed */
+    .memory-card:nth-child(even) .memory-content {
+        flex-direction: column; 
+    }
+    
+    .memory-text {
+        text-align: center; /* Center the text on mobile for a cleaner look */
+    }
+
+    .memory-text h2 {
+        font-size: 2rem;
+    }
 }
 

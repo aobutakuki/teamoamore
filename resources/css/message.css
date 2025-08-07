@@ -1,26 +1,52 @@
- .header{
-    background-color: #eb048a;
-    color: white;
-    padding: 10px;  
-    height: 7vh;
-    align-items: center;
-    
-}
+.navbar {
+            background-color: #eb048a; /* Your original header pink */
+            padding: 10px 0;
+        }
+
+        .navbar-nav {
+            width: 100%;
+            justify-content:space-between;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: white;
+            font-family: 'DynaPuff', cursive;
+            font-size: 1.2rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #51fa6d !important; /* Wicked Green for hover/active */
+        }
+
+        .heart-icon {
+            font-size: 30px;
+            color: white;
+            transition: color 0.3s;
+        }
+        .heart-icon:hover {
+            color: #51fa6d !important; /* Wicked Green for hover */
+        }
+
+        .navbar-toggler {
+            border: none;
+            font-size: 24px;
+            color: white;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
 
 a{
     text-decoration: none;
     color: white;
 }
 
-.heart-icon{
-    font-size: 35px;
-    margin-left: 60px;
 
-}
 
-a:hover{
-    color: #51fa6d;
-}
 
 body{
     background-color: #f0f0f0;
