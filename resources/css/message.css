@@ -65,6 +65,8 @@ p{
     text-align: center;
     color: black;
     overflow-wrap: break-word;
+    text-justify: inter-word;
+    text-align: justify;
 }
 
 
@@ -100,7 +102,7 @@ p{
             top: 0;
             left: 0;
             width: 100%;
-            height: 100vh;
+            height: 100%;
             overflow: hidden;
             z-index: 1;
         }
@@ -112,7 +114,7 @@ p{
                 opacity: 1;
             }
             100% {
-                bottom: 100vh; /* Move to the top of the screen */
+                bottom: 100%; /* Move to the top of the screen */
                 opacity: 0;
             }
         }
@@ -128,15 +130,55 @@ p{
         }
 
         /* Randomizing animation properties for a natural look */
-        .heart:nth-child(1) { left: 15%; animation-delay: 0s; animation-duration: 5s; font-size: 18px; }
-        .heart:nth-child(2) { left: 30%; animation-delay: 1.5s; animation-duration: 7s; font-size: 24px; }
-        .heart:nth-child(3) { left: 10%; animation-delay: 3s; animation-duration: 6s; font-size: 20px; }
-        .heart:nth-child(4) { left: 50%; animation-delay: 0.5s; animation-duration: 8s; font-size: 19px; }
-        .heart:nth-child(5) { left: 70%; animation-delay: 2.2s; animation-duration: 5.5s; font-size: 22px; }
-        .heart:nth-child(6) { left: 85%; animation-delay: 4s; animation-duration: 9s; font-size: 18px; }
-        .heart:nth-child(7) { left: 5%; animation-delay: 5s; animation-duration: 6s; font-size: 25px; }
-        .heart:nth-child(8) { left: 90%; animation-delay: 1s; animation-duration: 8s; font-size: 20px; }
-        .heart:nth-child(9) { left: 60%; animation-delay: 3.5s; animation-duration: 7s; font-size: 24px; }
-        .heart:nth-child(10) { left: 40%; animation-delay: 6s; animation-duration: 6s; font-size: 19px; }
-        .heart:nth-child(11) { left: 25%; animation-delay: 2s; animation-duration: 8s; font-size: 21px; }
-        .heart:nth-child(12) { left: 75%; animation-delay: 4.5s; animation-duration: 5s; font-size: 23px; }
+        .heart:nth-child(1) { left: 15%; animation-delay: 0s; animation-duration: 9s; font-size: 18px; }
+        .heart:nth-child(2) { left: 30%; animation-delay: 1.5s; animation-duration: 10s; font-size: 24px; }
+        .heart:nth-child(3) { left: 10%; animation-delay: 3s; animation-duration: 8s; font-size: 20px; }
+        .heart:nth-child(4) { left: 50%; animation-delay: 0.5s; animation-duration: 11s; font-size: 19px; }
+        .heart:nth-child(5) { left: 70%; animation-delay: 2.2s; animation-duration: 9.5s; font-size: 22px; }
+        .heart:nth-child(6) { left: 85%; animation-delay: 4s; animation-duration: 14s; font-size: 18px; }
+        .heart:nth-child(7) { left: 5%; animation-delay: 5s; animation-duration: 11s; font-size: 25px; }
+        .heart:nth-child(8) { left: 90%; animation-delay: 1s; animation-duration: 13s; font-size: 20px; }
+        .heart:nth-child(9) { left: 60%; animation-delay: 3.5s; animation-duration: 10s; font-size: 24px; }
+        .heart:nth-child(10) { left: 40%; animation-delay: 6s; animation-duration: 9s; font-size: 19px; }
+        .heart:nth-child(11) { left: 25%; animation-delay: 2s; animation-duration: 12s; font-size: 21px; }
+        .heart:nth-child(12) { left: 75%; animation-delay: 4.5s; animation-duration: 8s; font-size: 23px; }
+
+
+        @media (max-width: 768px) {
+  .heart:nth-child(1) {
+    animation-duration: 18s;
+  }
+  .heart:nth-child(2) {
+    animation-duration: 20s;
+  }
+  .heart:nth-child(3) {
+    animation-duration: 19s;
+  }
+  .heart:nth-child(4) {
+    animation-duration: 22s;
+  }
+  .heart:nth-child(5) {
+    animation-duration: 18.5s;
+  }
+  .heart:nth-child(6) {
+    animation-duration: 24s;
+  }
+  .heart:nth-child(7) {
+    animation-duration: 20s;
+  }
+  .heart:nth-child(8) {
+    animation-duration: 22s;
+  }
+  .heart:nth-child(9) {
+    animation-duration: 21s;
+  }
+  .heart:nth-child(10) {
+    animation-duration: 20s;
+  }
+  .heart:nth-child(11) {
+    animation-duration: 23s;
+  }
+  .heart:nth-child(12) {
+    animation-duration: 19s;
+  }
+}
